@@ -21,6 +21,22 @@ class C(B):
         print('Feature 5 is working....')
     def feature6(self):
         print('Feature 6 is working....')
+
+
+class P():
+    def feature11(self):
+        print('Feature 11 is working....')
+
+class Q():
+    def feature12(self):
+        print('Feature 12 is working....')
+
+# class R is inheriting the methods from two separate super classes P and Q - this is called multiple inheritance
+class R(P, Q):
+    def feature13(self):
+        print('Feature 13 is working....')
+
+
 a = A()
 a.feature1()
 a.feature2()
@@ -38,3 +54,8 @@ c.feature3()
 c.feature4()
 c.feature5()
 c.feature6()
+
+r = R()
+r.feature11()
+r.feature12()
+r.feature13()
